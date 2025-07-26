@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # E-commerce Web Application
 
 This is a full-stack e-commerce web application built with the MERN (MongoDB, Express, React, Node.js) stack.
@@ -61,3 +62,6 @@ Admin mobile number = 9876543210
 Admin Password = admin@5678
 
 All setup done, now you can access the client and admin both side.
+=======
+# Online-furniture-shop
+>>>>>>> 5220fcedb94114095bec9231e1fa3064533fd311

@@ -1,0 +1,147 @@
+.place-order {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  margin: 50px 0;
+}
+
+.place-order h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.place-order p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.order-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.place-order .redirect-message {
+  font-size: 16px;
+  color: #999;
+  margin-top: 20px;
+}
+
+.place-order .redirect-message span {
+  font-weight: bold;
+  color: #4caf50;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .place-order {
+    padding: 20px;
+    margin: 30px 0;
+  }
+
+  .place-order h1 {
+    font-size: 20px;
+  }
+
+  .place-order p {
+    font-size: 16px;
+  }
+
+  .order-number {
+    font-size: 18px;
+  }
+
+  .place-order .redirect-message {
+    font-size: 14px;
+  }
+}
+
+/* Add these styles to your existing PlaceOrder.css */
+
+.payment-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.form-row input, 
+.form-row textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-row textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.input-error {
+  border-color: #e25950 !important;
+}
+
+.error-message {
+  color: #e25950;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.payment-button {
+  background-color: #5469d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.payment-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.order-summary {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}

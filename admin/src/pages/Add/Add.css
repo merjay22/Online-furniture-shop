@@ -1,0 +1,123 @@
+.add {
+    width: 70%;
+    margin-left: max(5vw, 25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.add form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.add-image-upload img {
+    padding: 10px;
+    width: 150px;
+    border: 1px solid gray;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-image-upload .image-upload{
+    width: 150px;
+}
+
+.add-image-upload img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-name, .product-description {
+    width: max(40%, 280px);
+}
+
+.add-product-name input, .product-description textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.add-product-name input:focus, .product-description textarea:focus {
+    border-color: #007bff;
+}
+
+.add-category-price {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.add-category-price select, .add-category-price input {
+    max-width: 120px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+.add-category-price input:focus, .add-category-price select:focus {
+    border-color: #007bff;
+}
+
+.add-category-price input::-webkit-outer-spin-button, 
+.add-category-price input::-webkit-inner-spin-button {
+    display: none;
+}
+
+.add-btn {
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.5s, color 0.5s, border 0.5s;
+    font-size: 16px;
+}
+
+.add-btn:hover {
+    background-color: rgb(205, 205, 205);
+    color: black;
+    border: 1px solid black;
+}
+
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+    .add {
+        width: 60%;
+        margin-left: max(5vw, 15px);
+        margin-top: 40px;
+    }
+    .add-product-name, .product-description {
+        width: 100%;
+    }
+    .add-category-price {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .add {
+        width: 60%;
+        margin-left: max(5vw, 10px);
+        margin-top: 30px;
+    }
+    .add-product-name, .product-description {
+        width: 100%;
+    }
+    .add-category-price {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .add-btn {
+        width: 100%;
+        max-width: none;
+    }
+}

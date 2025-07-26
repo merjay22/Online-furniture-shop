@@ -1,0 +1,34 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 4%;
+}
+
+.navbar .title{
+    font-size: 20px;
+}
+
+.navbar .logo{
+    width: max(10%,80px);
+}
+
+.navbar .profile{
+    width: 40px;
+    cursor: pointer;
+}
+
+.navbar .profile-icon{
+    width: 30px;
+}
+
+.navbar .login-btn{
+    background: transparent;
+    font-size: 16px;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}

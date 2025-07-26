@@ -1,0 +1,194 @@
+.list-table-format {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr 0.5fr;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: all 0.3s ease;
+    margin: 10px;
+}
+
+.list-table-format.title {
+    background-color: #f9f9f9;
+}
+
+.list-table-format img {
+    width: 90px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.list-table-format img:hover {
+    transform: scale(1.05);
+}
+
+.list-table-format .del_icon {
+    width: 25px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+.list-table-format .edit_icon {
+    width: 25px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+.action-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.list-table-format .edit_icon:hover {
+    width: 28px;
+}
+
+.list-table-format .del_icon:hover {
+    width: 28px;
+}
+
+@media (max-width: 1024px) {
+    .list-table-format {
+        gap: 20px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: all 0.3s ease;
+        margin: 10px;
+    }
+    .list-table-format img {
+        width: 100%;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+    .list-table-format img:hover {
+        transform: scale(1.05);
+    }
+    .list-table-format .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .list-table-format .card-content h3 {
+        font-size: 20px;
+        color: #333;
+        margin: 0;
+    }
+    .list-table-format .card-content p {
+        font-size: 16px;
+        color: #666;
+        margin: 0;
+    }
+    .list-table-format .del_icon {
+        font-size: 18px;
+        color: #333;
+        transition: color 0.3s ease, font-size 0.3s ease;
+    }
+    .list-table-format .del_icon:hover {
+        font-size: 22px;
+        color: #ff6347;
+    }
+}
+
+@media (max-width: 600px) {
+    .list-table-format {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: all 0.3s ease;
+        margin: 10px;
+    }
+    .list-table-format.title {
+        display: none;
+    }
+    .list-table-format img {
+        width: 100%;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+    .list-table-format img:hover {
+        transform: scale(1.05);
+    }
+    .list-table-format .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .list-table-format .card-content h3 {
+        font-size: 18px;
+        color: #333;
+        margin: 0;
+    }
+    .list-table-format .card-content p {
+        font-size: 14px;
+        color: #666;
+        margin: 0;
+    }
+    .list-table-format .del_icon {
+        font-size: 16px;
+        color: #333;
+        transition: color 0.3s ease, font-size 0.3s ease;
+    }
+    .list-table-format .del_icon:hover {
+        font-size: 20px;
+        color: #ff6347;
+    }
+}
+
+@media (max-width: 400px) {
+    .list-table-format {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        transition: all 0.3s ease;
+        margin: 10px;
+    }
+    .list-table-format img {
+        width: 100%;
+        border-radius: 12px;
+        transition: transform 0.3s ease;
+    }
+    .list-table-format img:hover {
+        transform: scale(1.05);
+    }
+    .list-table-format .card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    .list-table-format .card-content h3 {
+        font-size: 18px;
+        color: #333;
+        margin: 0;
+    }
+    .list-table-format .card-content p {
+        font-size: 14px;
+        color: #666;
+        margin: 0;
+    }
+    .list-table-format .del_icon {
+        font-size: 16px;
+        color: #333;
+        transition: color 0.3s ease, font-size 0.3s ease;
+    }
+    .list-table-format .del_icon:hover {
+        font-size: 20px;
+        color: #ff6347; 
+    }
+}
